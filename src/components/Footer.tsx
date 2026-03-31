@@ -45,6 +45,7 @@ export default function Footer() {
               {[
                 { href: "/", label: "Home" },
                 { href: "/about", label: "About" },
+                { href: "/board", label: "Board of Directors" },
                 { href: "/programs", label: "Our Programs" },
                 { href: "/get-help", label: "Get Help" },
                 { href: "/get-involved", label: "Get Involved" },
