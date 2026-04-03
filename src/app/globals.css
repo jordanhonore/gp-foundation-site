@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-terracotta: #C1604D;
+  --color-terracotta-dark: #A04A38;
+  --color-terracotta-light: #D4856F;
+  --color-cream: #FDF6F0;
+  --color-sage: #8FAE8B;
+  --color-sage-light: #D5E3D3;
+  --color-deep-brown: #3B2A22;
+  --color-warm-gray: #6B5B53;
+  --color-light-warm: #F5EDE6;
+  --color-gold: #C8A45C;
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-deep-brown);
+}
