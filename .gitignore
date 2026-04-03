@@ -1,0 +1,9 @@
+.DS_Store
+*.tmp
+node_modules/
+gp-foundation-site/
+*.ai
+*.docx
+*.xlsx
+1x/
+.claude/
