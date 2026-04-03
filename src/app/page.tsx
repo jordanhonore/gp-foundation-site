@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -132,9 +133,13 @@ export default function Home() {
       <section className="py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="w-full h-96 bg-sage-light rounded-lg flex items-center justify-center text-warm-gray">
-              Founder Photo
-            </div>
+            <Image
+              src="/founder-headshot.webp"
+              alt="Brittaney Honore, LMFTA — Founder of G&P Foundation for Wellness"
+              width={600}
+              height={600}
+              className="w-full h-96 object-cover object-top rounded-lg"
+            />
             <div>
               <h2 className="text-3xl font-bold text-deep-brown mb-5">
                 Born from a Mother&apos;s Journey
