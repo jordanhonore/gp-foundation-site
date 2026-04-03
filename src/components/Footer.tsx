@@ -33,7 +33,7 @@ export default function Footer() {
               financial barriers to mental health care for underserved families
               in Fort Bend and Harris Counties, Texas.
             </p>
-            <p className="text-white/60 text-sm">EIN: Pending</p>
+            <p className="text-white/60 text-sm">EIN: 41-3463875</p>
           </div>
 
           {/* Quick Links */}

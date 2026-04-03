@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -37,18 +38,15 @@ export default function Header() {
       {/* Main Header */}
       <header className="bg-white py-4 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center flex-wrap gap-4">
-          <Link href="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-terracotta rounded-full flex items-center justify-center text-white text-xl">
-              ♥
-            </div>
-            <div>
-              <h1 className="text-lg font-bold text-deep-brown leading-tight">
-                G&P Foundation for Wellness
-              </h1>
-              <span className="text-xs text-warm-gray uppercase tracking-wider">
-                501(c)(3) Public Charity
-              </span>
-            </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/GPFoundLogo.svg"
+              alt="G&P Foundation for Wellness"
+              width={852}
+              height={190}
+              className="h-14 w-auto"
+              priority
+            />
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">
