@@ -62,7 +62,7 @@ export default function Header() {
               </div>
             </div>
             <Link
-              href="/get-involved"
+              href="/donate"
               className="bg-terracotta text-white px-7 py-3 rounded font-bold text-sm uppercase tracking-wide hover:bg-terracotta-dark transition-colors"
             >
               Donate
