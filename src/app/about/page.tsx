@@ -18,40 +18,55 @@ export default function AboutPage() {
 
       {/* Our Story */}
       <section className="py-20">
-        <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-deep-brown text-center">
-            Our Story
-          </h2>
-          <div className="w-16 h-1 bg-terracotta mx-auto mt-4 mb-10" />
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold text-deep-brown">
+                Our Story
+              </h2>
+              <div className="w-16 h-1 bg-terracotta mt-4 mb-10" />
 
-          <p className="text-warm-gray leading-relaxed mb-6">
-            The GP Foundation for Wellness was born from a simple truth: too
-            many families struggling with mental health challenges simply cannot
-            afford the care they need. Every day, parents, children, and couples
-            fall through the cracks of a system that wasn&apos;t designed with
-            them in mind.
-          </p>
-          <p className="text-warm-gray leading-relaxed mb-6">
-            In Fort Bend and Harris Counties, the gap between those who need
-            therapy and those who can access it continues to widen. Wait lists
-            grow longer, insurance barriers multiply, and families in crisis are
-            told to hold on just a little longer. We believe that&apos;s not
-            good enough.
-          </p>
-          <p className="text-warm-gray leading-relaxed mb-6">
-            That&apos;s why we fund therapy directly. No red tape. No endless
-            referrals. We connect families with licensed therapists and cover the
-            cost so that healing can begin when it&apos;s needed most &mdash;
-            not months from now, but today.
-          </p>
-          <p className="text-warm-gray leading-relaxed">
-            Our founder, a Licensed Marriage and Family Therapist (LMFT), has
-            spent years witnessing firsthand the transformative power of
-            accessible mental health care &mdash; and the devastating
-            consequences when it&apos;s out of reach. The GP Foundation for
-            Wellness is the answer to a calling that couldn&apos;t wait any
-            longer.
-          </p>
+              <p className="text-warm-gray leading-relaxed mb-6">
+                The GP Foundation for Wellness was born from a simple truth: too
+                many families struggling with mental health challenges simply cannot
+                afford the care they need. Every day, parents, children, and couples
+                fall through the cracks of a system that wasn&apos;t designed with
+                them in mind.
+              </p>
+              <p className="text-warm-gray leading-relaxed mb-6">
+                In Fort Bend and Harris Counties, the gap between those who need
+                therapy and those who can access it continues to widen. Wait lists
+                grow longer, insurance barriers multiply, and families in crisis are
+                told to hold on just a little longer. We believe that&apos;s not
+                good enough.
+              </p>
+            </div>
+            <div className="relative">
+              <img 
+                src="/headshot.webp" 
+                alt="Founder of GP Foundation" 
+                className="rounded-2xl shadow-2xl w-full max-w-md mx-auto object-cover aspect-[4/5]"
+              />
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-sage-light/40 rounded-full -z-10"></div>
+            </div>
+          </div>
+
+          <div className="mt-12">
+            <p className="text-warm-gray leading-relaxed mb-6">
+              That&apos;s why we fund therapy directly. No red tape. No endless
+              referrals. We connect families with licensed therapists and cover the
+              cost so that healing can begin when it&apos;s needed most &mdash;
+              not months from now, but today.
+            </p>
+            <p className="text-warm-gray leading-relaxed">
+              Our founder, a Licensed Marriage and Family Therapist (LMFT), has
+              spent years witnessing firsthand the transformative power of
+              accessible mental health care &mdash; and the devastating
+              consequences when it&apos;s out of reach. The GP Foundation for
+              Wellness is the answer to a calling that couldn&apos;t wait any
+              longer.
+            </p>
+          </div>
         </div>
       </section>
 

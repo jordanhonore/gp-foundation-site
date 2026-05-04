@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -8,7 +7,6 @@ import { useState } from "react";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/board", label: "Board" },
   { href: "/programs", label: "Our Programs" },
   { href: "/get-help", label: "Get Help" },
   { href: "/get-involved", label: "Get Involved" },
@@ -38,14 +36,11 @@ export default function Header() {
       {/* Main Header */}
       <header className="bg-white py-4 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center flex-wrap gap-4">
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/GPFoundLogo.svg"
-              alt="G&P Foundation for Wellness"
-              width={852}
-              height={190}
-              className="h-14 w-auto"
-              priority
+          <Link href="/" className="flex items-center gap-3">
+            <img 
+              src="/GPFoundLogo.svg" 
+              alt="G&P Foundation Logo" 
+              className="h-16 w-auto object-contain"
             />
           </Link>
 
@@ -62,7 +57,7 @@ export default function Header() {
               </div>
             </div>
             <Link
-              href="/donate"
+              href="/get-involved"
               className="bg-terracotta text-white px-7 py-3 rounded font-bold text-sm uppercase tracking-wide hover:bg-terracotta-dark transition-colors"
             >
               Donate

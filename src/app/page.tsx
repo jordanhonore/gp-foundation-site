@@ -1,63 +1,88 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-deep-brown to-terracotta-dark text-white py-24 text-center relative overflow-hidden">
-        <div className="relative z-10 max-w-3xl mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold mb-2 leading-tight">
-            Every Mother Deserves a Village.
+      <section className="relative py-24 md:py-32 overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/Gemini_Generated_Image_8frpv68frpv68frp.png"
+            alt="Supportive community with 'My Mental Health Matters' sign"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-sage-deep/40 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-sage-deep/90 via-sage-deep/40 to-transparent"></div>
+        </div>
+
+        <div className="relative z-10 max-w-5xl mx-auto px-4 text-center">
+          <div className="inline-block bg-terracotta text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+            Healing is a Right, Not a Luxury
+          </div>
+          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            Empowering Families through <br className="hidden md:block" />
+            <span className="text-sage-light">Compassionate Mental Health Care.</span>
           </h2>
-          <h3 className="text-2xl md:text-3xl font-light text-terracotta-light mb-5">
-            Every Family Deserves to Thrive.
-          </h3>
-          <p className="text-lg text-white/90 mb-9 max-w-2xl mx-auto leading-relaxed">
-            The G&P Foundation for Wellness removes the financial barriers
-            standing between underserved families and the mental health care they
-            need. Because healing should never depend on what you can afford.
+          <p className="text-xl text-cream/90 mb-10 max-w-2xl mx-auto leading-relaxed">
+            We remove financial barriers so mothers and families can access the 
+            licensed therapy they need to thrive.
           </p>
-          <div className="flex gap-4 justify-center flex-wrap">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
-              href="/programs"
-              className="bg-terracotta border-2 border-terracotta text-white px-8 py-3.5 rounded font-bold text-sm uppercase tracking-wide hover:bg-terracotta-dark hover:border-terracotta-dark transition-colors"
+              href="/get-involved"
+              className="w-full sm:w-auto bg-terracotta text-white px-10 py-4 rounded font-bold text-base uppercase tracking-wide hover:bg-terracotta-dark transition-all shadow-lg hover:shadow-terracotta/20"
             >
-              Learn About Our Programs
+              Donate Now
             </Link>
             <Link
               href="/get-help"
-              className="border-2 border-white text-white px-8 py-3.5 rounded font-bold text-sm uppercase tracking-wide hover:bg-white hover:text-terracotta transition-colors"
+              className="w-full sm:w-auto bg-white text-deep-brown px-10 py-4 rounded font-bold text-base uppercase tracking-wide hover:bg-cream transition-all shadow-lg"
             >
-              Apply for a Care Scholarship
+              Apply for Care
             </Link>
           </div>
         </div>
       </section>
 
       {/* Mission */}
-      <section className="py-20 bg-cream">
-        <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-deep-brown mb-4">
-            Where Healing Begins
-          </h2>
-          <div className="w-14 h-0.5 bg-terracotta mx-auto mb-8" />
-          <p className="text-warm-gray leading-relaxed mb-5 text-lg">
-            We believe that every mother navigating the weight of postpartum
-            depression, every child carrying the burden of trauma, and every
-            family struggling to hold it together deserves access to real,
-            licensed, compassionate care — regardless of income.
-          </p>
-          <p className="text-warm-gray leading-relaxed text-lg">
-            The G&P Foundation for Wellness funds therapy. Not someday. Now.
-            Through our Care Scholarship Program, we pay licensed therapists
-            directly so that families in Fort Bend and Harris Counties can
-            receive the support they need without the impossible burden of
-            out-of-pocket costs.{" "}
-            <strong className="text-deep-brown">
-              We don&apos;t just believe healing is possible. We fund it.
-            </strong>
-          </p>
+      <section className="py-24 bg-cream overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="order-2 lg:order-1">
+              <h2 className="text-3xl md:text-4xl font-bold text-deep-brown mb-6">
+                Where Healing Begins
+              </h2>
+              <div className="w-16 h-1.5 bg-terracotta mb-8" />
+              <p className="text-warm-gray leading-relaxed mb-6 text-lg">
+                We believe that every mother navigating the weight of postpartum
+                depression, every child carrying the burden of trauma, and every
+                family struggling to hold it together deserves access to real,
+                licensed, compassionate care — regardless of income.
+              </p>
+              <p className="text-warm-gray leading-relaxed text-lg mb-8">
+                The G&P Foundation for Wellness funds therapy. Not someday. Now.
+                Through our Care Scholarship Program, we pay licensed therapists
+                directly so that families in Fort Bend and Harris Counties can
+                receive the support they need without the impossible burden of
+                out-of-pocket costs.
+              </p>
+              <div className="p-6 bg-sage-light/30 border-l-4 border-sage rounded-r-lg">
+                <p className="text-deep-brown font-semibold italic text-lg">
+                  &ldquo;We don&apos;t just believe healing is possible. We fund it.&rdquo;
+                </p>
+              </div>
+            </div>
+            <div className="order-1 lg:order-2 relative">
+              <div className="absolute -top-10 -right-10 w-64 h-64 bg-sage-light/50 rounded-full blur-3xl -z-10"></div>
+              <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-terracotta-light/30 rounded-full blur-3xl -z-10"></div>
+              <img
+                src="/priscilla-du-preez-aPa843frIzI-unsplash.jpg"
+                alt="Supportive community hand"
+                className="rounded-2xl shadow-xl w-full h-[500px] object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -133,13 +158,14 @@ export default function Home() {
       <section className="py-20 bg-cream">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <Image
-              src="/founder-headshot.webp"
-              alt="Brittaney Honore, LMFTA — Founder of G&P Foundation for Wellness"
-              width={600}
-              height={600}
-              className="w-full h-96 object-cover object-top rounded-lg"
-            />
+            <div className="relative">
+              <img
+                src="/headshot.webp"
+                alt="Founder of GP Foundation"
+                className="rounded-2xl shadow-xl w-full h-[500px] object-cover"
+              />
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-sage-light/40 rounded-full -z-10"></div>
+            </div>
             <div>
               <h2 className="text-3xl font-bold text-deep-brown mb-5">
                 Born from a Mother&apos;s Journey
@@ -167,25 +193,29 @@ export default function Home() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-20 bg-terracotta text-white text-center">
-        <div className="max-w-2xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-4">
+      <section className="py-24 bg-sage-deep text-white text-center relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-terracotta rounded-full translate-x-1/2 -translate-y-1/2 blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full -translate-x-1/2 translate-y-1/2 blur-3xl"></div>
+        </div>
+        <div className="relative z-10 max-w-2xl mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             You Can Be Part of Someone&apos;s Healing
           </h2>
-          <p className="text-lg text-white/90 mb-8">
+          <p className="text-lg text-cream/80 mb-10 leading-relaxed">
             Every dollar you give funds real therapy sessions for real families
             in our community. No overhead bloat. No bureaucracy. Just care.
           </p>
-          <div className="flex gap-4 justify-center flex-wrap">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/get-involved"
-              className="bg-deep-brown border-2 border-deep-brown text-white px-8 py-3.5 rounded font-bold text-sm uppercase tracking-wide hover:bg-deep-brown/80 transition-colors"
+              className="w-full sm:w-auto bg-terracotta text-white px-10 py-4 rounded font-bold text-base uppercase tracking-wide hover:bg-terracotta-dark transition-all shadow-lg hover:shadow-terracotta/20"
             >
               Donate Now
             </Link>
             <Link
               href="/get-involved"
-              className="border-2 border-white text-white px-8 py-3.5 rounded font-bold text-sm uppercase tracking-wide hover:bg-white hover:text-terracotta transition-colors"
+              className="w-full sm:w-auto border-2 border-white/30 text-white px-10 py-4 rounded font-bold text-base uppercase tracking-wide hover:bg-white hover:text-sage-deep transition-all"
             >
               Volunteer With Us
             </Link>
