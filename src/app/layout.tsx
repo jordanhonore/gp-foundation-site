@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   },
   description:
     "G&P Foundation for Wellness funds free therapy for underserved families, postpartum mothers, and at-risk youth in Fort Bend and Harris Counties, Texas.",
+  icons: {
+    icon: "/GPLoveLeaf.svg",
+    apple: "/GPLoveLeaf.png",
+  },
 };
 
 export default function RootLayout({
