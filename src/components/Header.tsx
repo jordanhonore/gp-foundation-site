@@ -21,12 +21,12 @@ export default function Header() {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-deep-brown text-cream text-sm py-2">
+      <div className="bg-sage-deep text-cream text-sm py-2">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center flex-wrap gap-2">
           <span className="font-medium">501(c)(3) Public Charity</span>
           <a
             href="mailto:info@goodandplentyfoundation.org"
-            className="hover:text-terracotta-light transition-colors"
+            className="hover:text-sage-light transition-colors"
           >
             info@goodandplentyfoundation.org
           </a>
@@ -67,7 +67,7 @@ export default function Header() {
       </header>
 
       {/* Navigation */}
-      <nav className="bg-deep-brown sticky top-0 z-50">
+      <nav className="bg-sage-deep sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center flex-wrap">
           <ul
             className={`${
@@ -81,7 +81,7 @@ export default function Header() {
                   className={`block px-5 py-4 text-sm font-semibold uppercase tracking-wide transition-colors ${
                     pathname === link.href
                       ? "bg-terracotta text-white"
-                      : "text-cream hover:bg-terracotta hover:text-white"
+                      : "text-cream hover:bg-sage hover:text-white"
                   }`}
                   onClick={() => setMobileOpen(false)}
                 >
